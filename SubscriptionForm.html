@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SubscriptionForm.css">
+    <script src="SubscriptionForm.js" defer></script>
+    <title>Subscription</title>
+</head>
+<body>
+    <header class="page-header">
+        <a href="Home.html" class="logo">GY<span class="logo-O">O</span>RÉAL</a>
+    </header>
+
+    <main class="page-main">
+        <div class="form-frame">
+            <form id="subscriptionForm" class="subscription-form" novalidate>
+                <h2 class="form-title">Registration</h2>
+
+                <label class="field">
+                    <span class="field-label">Name</span>
+                    <input type="text" name="name" required>
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Email</span>
+                    <input type="email" name="email" required>
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Preferred Product Catagory</span>
+                    <input type="text" name="category">
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Newsletter Frequency</span>
+                    <input type="text" name="frequency">
+                </label>
+
+                <label class="terms">
+                    <input type="checkbox" name="agree" id="agree">
+                    <span>Terms And Privacy Agreement</span>
+                </label>
+
+                <button class="btn-register" type="submit">Register</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

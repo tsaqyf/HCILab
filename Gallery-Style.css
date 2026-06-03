@@ -1,0 +1,97 @@
+body {
+    background: #121212; 
+}
+
+.gallery-section {
+    padding: 160px 40px 40px; 
+}
+
+.gallery-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-heading {
+    color: #ddd;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #060606;
+    padding: 18px;
+    border: 1px solid #111;
+}
+
+.gallery-item {
+    background: #000;
+    color: #ddd;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.image-frame {
+    flex: 1 1 auto;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.item-meta {
+    background: #080808;
+    padding: 18px 20px;
+    border-top: 1px solid rgba(201,169,110,0.06);
+    text-align: left;
+}
+
+.item-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #a98948;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.item-price {
+    font-family: 'Playfair Display', serif;
+    color: #ddd;
+    font-size: 16px;
+}
+
+
+.site-footer { margin-top: 30px; }
+
+@media (max-width: 980px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-frame img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-section {
+        padding-top: 120px;
+    }
+    .image-frame img {
+        height: 200px;
+    }
+}

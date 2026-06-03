@@ -1,0 +1,99 @@
+.page-content {
+    padding-top: 150px; 
+    background: #0b0b0b;
+    color: #eee;
+    min-height: 80vh;
+}
+
+.page-header .meta {
+    color: #bda86b;
+    letter-spacing: 0.12em;
+    margin: 18px 0 8px;
+}
+.page-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 48px;
+    color: #ddd;
+    margin: 8px 0 36px;
+}
+.page-header .sub-title {
+    display: block;
+    font-size: 44px;
+    color: #dcd6cc;
+}
+
+.plans {
+    padding: 24px 0 80px;
+}
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    border-right: 1px solid rgba(255,255,255,0.03);
+}
+.plan:last-child { border-right: none; }
+
+.plan-head {
+    padding: 36px 28px 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.badge {
+    display: inline-block;
+    border: 1px solid rgba(189,168,107,0.9);
+    padding: 8px 14px;
+    color: #bda86b;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    margin-bottom: 12px;
+}
+.plan-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #e8e0d6;
+    margin: 0;
+}
+
+.plan-body {
+    padding: 28px 36px;
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.plan-body ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #bda86b;
+    margin-bottom: 26px;
+}
+.plan-body li { margin: 8px 0; }
+
+.btn-buy {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(189,168,107,0.9);
+    color: #bda86b;
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.plan-foot {
+    padding: 22px 28px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #e9e0d6;
+}
+
+@media (max-width: 1000px) {
+    .plans-grid { grid-template-columns: 1fr; }
+    .plan { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.03); }
+}

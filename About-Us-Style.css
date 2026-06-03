@@ -1,0 +1,67 @@
+.about-page {
+    margin-top: 195px; 
+    background: #0b0b0b;
+}
+
+.about-hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-top: 3px solid #c9a96e;
+    border-bottom: 3px solid #c9a96e;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    display: block;
+    height: 600px;
+    background-image: url('./HCI Tugas/Gemini_Generated_Image_5lf6t85lf6t85lf6.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.35);
+}
+
+.about-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 80px;
+    color: #eee;
+    text-align: center;
+}
+
+.about-text {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(238,238,238,0.9);
+    max-width: 900px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .about-hero::before {
+        height: 420px;
+    }
+    .about-content {
+        padding: 28px 20px;
+    }
+    .about-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero::before {
+        height: 520px;
+    }
+    .about-title {
+        font-size: 16px;
+    }
+    .about-text {
+        font-size: 14px;
+    }
+}
